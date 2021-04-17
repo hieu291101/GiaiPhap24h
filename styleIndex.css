@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    --red:#de5246;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+nav {
+    position: relative;
+    width: 100%;
+}
+
+.nav_layout {
+    position: sticky;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    z-index: 1;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav_links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Bahnschrift, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #22577a;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-35%);
+    width: 100%;
+    height: 100%;
+    font-family: var(--font);
+}
+
+.login_layout {
+    width: 25%;
+    height: 25%;
+
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup * {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.signup .signup_heading {
+    font-size: 4rem;
+    font-family: var(--font);
+}
+
+.signup .signup-google {
+    display: flex;
+    width:30rem ;
+    padding: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #fbfbfb, #d4d4d4);
+    box-shadow:  20px 20px 60px #c8c8c8,
+             -20px -20px 60px #ffffff;
+    align-items: center;
+    text-decoration: none;
+}
+
+.signup .signup-google i{
+    color: var(--red);
+    font-size: 2rem;
+    
+}
+
+.signup .signup-google .signup-google-text{
+    font-size: 1.6rem;
+    flex: 1;
+    text-align: center;
+    color: #333;
+}
+
+.signup .signup_or {
+    font-size: 1.4rem;
+    margin: 1.5rem;
+}
+.signup .signup_form {
+    margin: 1,6rem;
+}
+
+.signup .signup_form .form_group {
+    display: flex;
+    flex-direction: column;
+    width:30rem ;
+}
+
+.signup .signup_form .form_group > * {
+    margin: .5rem;
+    
+}
+
+.signup .signup_form .form_group .form_label {
+    font-weight: 550;
+}
+
+.signup .signup_form .form_group .form_input {
+    border: none;
+    outline: none;
+    padding:1rem;
+    border-radius: 50px;
+    background: #ebebeb;
+    box-shadow: inset 20px 20px 60px #c8c8c8,
+            inset -20px -20px 60px #ffffff;     
+}
+
+.signup .signup_link {
+    color: #08aeea;
+}
+
+.form_submit {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    background-color: #08aeea;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px -5px #08aeeacb;
+    outline:none;
+}
+
+.form_submit a {
+    
+}
+
+
+
+
+
+
+
