@@ -56,6 +56,7 @@
     text-decoration: none;
     color:#333;
     background-color: #f89b2a;
+    font-size: 1.8rem   ;
     padding: 1rem;
     margin: .2rem;
     color: white;
@@ -88,10 +89,13 @@
 
 .meal_layout-function {
     margin: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .meal_name-diet {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .meal_layout-heading {
     background-color: #22577a;
@@ -121,4 +125,28 @@
 .meal_layout-content {
     display: flex;
     width: 100%;
+}
+
+.meal_function-items {
+    display: flex;
+
+}
+
+
+.meal_function-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.6rem;
+    width: fit-content;
+    height: max-content;
+    background-color: #f89b2a;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.meal_function-item p {
+    margin: 1.6rem 0 0 0;
 }
