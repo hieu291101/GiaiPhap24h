@@ -1,74 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-:root {
-    --primary: #08aeea;
-    --secondary: #13D2B8;
-    --purple: #bd93f9;
-    --pink: #ff6bcb;
-    --blue: #8be9fd;
-    --gray: #333;
-    --font: "Poppins", sans-serif;
-    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
-    --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
-    --red:#de5246;
-}
-
-html {
-    font-size: 62.5%;
-}
 
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #ebebeb;
-}
-
-.main {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* overflow: hidden; */
-}
-
-nav {
-    position: relative;
-    width: 100%;
-}
-
-.nav_layout {
-    position: sticky;
+.information {
     display: flex;
-    width: 80%;
+    flex-direction: column;
     align-items: center;
-    margin: auto;
-    z-index: 1;
+    margin-top: 10rem;
+    color: #333;
 }
 
-.logo {
-    flex-basis: 20%;
+.information_layout li {
+    list-style-type: none;
 }
 
-.logo img {
-    width: 100px;
-}
-
-.nav_links {
+.information_layout select,input {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    font-size: medium;
     flex: 1;
-    text-align: right;
+    padding: 1rem;
+    cursor: pointer;
 }
 
-.nav_links li {
-    list-style: none;
+.information_layout span {
+    background-color: #08aeea;
+    height: .2rem;
     display: inline-block;
-    margin: 0 20px;
+    flex: 1;
 }
 
-.nav_links li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: Bahnschrift, Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #22577a;
+.information_layout label {
+    font-weight: 600;
+    flex-basis: 30%;
 }
+
+.information_layout {
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.information_heading {
+    color: #08aeea;
+    margin-bottom: 5rem;
+}
+
+.information_item {
+    display: flex;
+    align-items: center ;
+    margin-bottom: 1rem;
+}
+
+.more_information-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.more_information-block p {
+    flex: 1;
+    text-align: center;
+    color: #08aeea;
+    cursor: pointer;
+}
+
+.btn_xemThucDon {
+    width: 100%;
+    text-align: center;
+    background-color: #f89b2a;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5rem;
+    color: white    ;
+}
+
